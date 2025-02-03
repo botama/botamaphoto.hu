@@ -9,6 +9,46 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*body {
+    /*background-image: url('./assets/wedding/VikiCsabi/IMG0874.JPG');*/
+    /*background: linear-gradient(to bottom, white 10%, rgba(255, 255, 255, 0) 40%), 
+            url('./assets/wedding/VikiCsabi/IMG0874.JPG'); /* Kép elérési útja */
+    /*background-size: cover; /* A kép kitölti az egész képernyőt */
+    /*background-position: center; /* A kép középre igazítása */
+    /*background-repeat: no-repeat; /* Nem ismétlődik a háttérben */
+    /*height: 100vh; /* Az egész nézetmagasságot lefedi */
+    /*margin: 0;
+}
+*/
+body {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+/* Háttér konténer */
+#background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Háttérrétegek */
+.background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 1s ease-in-out;
+}
+
 /*----Header----*/
 .logo {
     display: flex;
@@ -39,7 +79,8 @@ nav {
 }
 
 nav a {
-    padding: 7px;
+    padding: 10px 20px;
+    color: black;
 }
 
 .header-menu a {
@@ -47,7 +88,7 @@ nav a {
 }
 
 main img {
-    max-width: 90vw; /* A kép maximális szélessége a viewport 90%-a */
+    max-width: 95vw; /* A kép maximális szélessége a viewport 90%-a */
     max-height: 70vh; /* A kép maximális magassága a viewport 90%-a */
     width: auto; /* Megőrzi az eredeti arányokat */
     height: auto; /* Megőrzi az eredeti arányokat */
