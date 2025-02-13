@@ -2,8 +2,8 @@ const images = [
     "./assets/wedding/VikiCsabi/IMG0874.JPG",
     "./assets/wedding/VikiCsabi/164.jpg",
     "./assets/wedding/VikiCsabi/622.jpg",
-    "./assets/wedding/VikiCsabi/IMG_078.jpg",
-    "./assets/wedding/VikiCsabi/796.jpg"
+    "./assets/wedding/VikiCsabi/IMG0874.JPG",
+    "./assets/wedding/VikiCsabi/IMG0874.JPG"
 ];
 
 let currentIndex = 0;

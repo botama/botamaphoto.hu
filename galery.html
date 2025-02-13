@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galéria</title>
+    <link rel="stylesheet" href="./galery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header-container">
+        <nav class="nav-bar">
+            <ul class="header-menu menu left-menu">
+                <li class="menu__item"><a href="#home">Főoldal</a></li>
+                <li class="menu__item"><a href="#aboutme">Bemutakozás</a></li>
+            </ul>
+            <img src="./assets/NweLogoToWeb1500xPNG.png" alt="logo" class="logo">
+
+            <ul class="header-menu menu right-menu">
+                <li class="menu__item"><a href="#galery">Galéria</a></li>
+                <li class="menu__item"><a href="#contact">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="background-container">
+        <div class="background"></div>
+    </div>
+
+
+    <main>
+        <div class="gallery">
+            <!-- Példa képek -->
+            <img src="./assets/wedding/VikiCsabi/IMG0874.JPG" alt="Kép 1">
+            <img src="./assets/wedding/VikiCsabi/164.jpg" alt="Kép 2">
+            <img src="./assets/wedding/VikiCsabi/622.jpg" alt="Kép 3">
+            <img src="./assets/wedding/VikiCsabi/IMG0913.JPG" alt="Kép 3">
+            <img src="./assets/wedding/VikiCsabi/IMG_078.jpg" alt="Kép 4">
+            <img src="./assets/wedding/VikiCsabi/796.jpg" alt="Kép 5">
+            <img src="./assets/wedding/VikiCsabi/IMG0874.JPG" alt="Kép 1">
+            <img src="./assets/wedding/VikiCsabi/164.jpg" alt="Kép 2">
+            <img src="./assets/wedding/VikiCsabi/IMG04.JPG" alt="Kép 2">
+            <img src="./assets/wedding/VikiCsabi/622.jpg" alt="Kép 3">
+            <img src="./assets/wedding/VikiCsabi/IMG_078.jpg" alt="Kép 4">
+            <img src="./assets/wedding/VikiCsabi/796.jpg" alt="Kép 5">
+            <img src="./assets/wedding/VikiCsabi/IMG0874.JPG" alt="Kép 1">
+            <img src="./assets/wedding/VikiCsabi/164.jpg" alt="Kép 2">
+            <img src="./assets/wedding/VikiCsabi/622.jpg" alt="Kép 3">
+            <img src="./assets/wedding/VikiCsabi/IMG_078.jpg" alt="Kép 4">
+            <img src="./assets/wedding/VikiCsabi/796.jpg" alt="Kép 5">
+            <!-- További képek -->
+        </div>
+        <!-- Nagyított kép megjelenítő -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="galery.js"></script>
 </body>
 </html>
